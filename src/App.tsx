@@ -1,5 +1,5 @@
-import InfiniteScroll from 'Components/InfiniteScroll/InfinteScoll';
 import InfiniteScroll2 from 'Components/InfiniteScroll2/InfiniteScroll2';
+// import InfiniteScroll from 'Components/InfiniteScroll/InfinteScoll';
 // import ModalExample from 'Components/Modal/ModalExample';
 // import PaginationExample from 'Components/Pagination/PaginationExample';
 // import Carousel from 'Components/Carousel/Carousel';
@@ -9,11 +9,11 @@ function App() {
   return (
     <>
       <InfiniteScroll2 />
-      {/* <InfiniteScroll />
-      <ModalExample />
-      <PaginationExample />
-      <Carousel />
-      <ExampleSkeleton /> */}
+      {/* <InfiniteScroll /> */}
+      {/* <ModalExample /> */}
+      {/* <PaginationExample /> */}
+      {/* <Carousel /> */}
+      {/* <ExampleSkeleton /> */}
     </>
   );
 }

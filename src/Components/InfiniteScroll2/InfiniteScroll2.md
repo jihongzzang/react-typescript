@@ -25,7 +25,7 @@ interface IntersectionObserverCallback {
 
 #### entries
 
-- IntersectionObserver 인스턴스의 배열입니다.
+- IntersectionObserver 인스턴스의 배열
 
 ```js
 interface IntersectionObserverEntry {
