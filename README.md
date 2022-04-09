@@ -24,3 +24,12 @@
 - [Portal 컴포넌트](src/Components/Modal/Portal.tsx)
 - [Modal 컴포넌트](src/Components/Modal/Modal.tsx)
 - [Modal Ui 예제컴포넌트](src/Components/Modal/ModalExample.tsx)
+
+#### **Infinite Scroll**
+
+- [Infinite Ui](src/Components/InfiniteScroll/InfiniteScroll.md)
+- [Infinite Ui 예제컴포넌트](src/Components/InfiniteScroll/InfinteScoll.tsx)
+
+#### **Infinite Scroll InterSection Observer**
+
+- [Infinite Ui](src/Components/InfiniteScroll2/InfiniteScroll2.md)
