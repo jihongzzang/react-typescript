@@ -33,3 +33,5 @@
 #### **Infinite Scroll InterSection Observer**
 
 - [Infinite Ui](src/Components/InfiniteScroll2/InfiniteScroll2.md)
+- [Infinite Ui 훅](src/hooks/useIntersectionObserver.ts)
+- [Infinite Ui 컴포넌트](src/Components/InfiniteScroll2/InfiniteScroll2.tsx)

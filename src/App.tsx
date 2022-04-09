@@ -1,4 +1,5 @@
 import InfiniteScroll from 'Components/InfiniteScroll/InfinteScoll';
+import InfiniteScroll2 from 'Components/InfiniteScroll2/InfiniteScroll2';
 // import ModalExample from 'Components/Modal/ModalExample';
 // import PaginationExample from 'Components/Pagination/PaginationExample';
 // import Carousel from 'Components/Carousel/Carousel';
@@ -7,8 +8,9 @@ import InfiniteScroll from 'Components/InfiniteScroll/InfinteScoll';
 function App() {
   return (
     <>
-      <InfiniteScroll />
-      {/* <ModalExample />
+      <InfiniteScroll2 />
+      {/* <InfiniteScroll />
+      <ModalExample />
       <PaginationExample />
       <Carousel />
       <ExampleSkeleton /> */}
