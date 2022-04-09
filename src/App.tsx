@@ -1,11 +1,13 @@
-import Carousel from 'Components/Carousel/Carousel';
+import PaginationExample from 'Components/Pagination/PaginationExample';
+// import Carousel from 'Components/Carousel/Carousel';
 // import ExampleSkeleton from 'Components/Skeleton/ExampleSkeleton';
 
 function App() {
   return (
     <>
-      {/* <ExampleSkeleton /> */}
-      <Carousel />
+      <PaginationExample></PaginationExample>
+      {/* <Carousel />
+      <ExampleSkeleton /> */}
     </>
   );
 }
