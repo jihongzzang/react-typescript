@@ -59,7 +59,7 @@ const Skeleton: React.FC<Props> = ({
 }) => {
   const content = useMemo(
     () => [...Array({ length: count })].map(() => '-').join(''),
-    [count]
+    [count],
   );
 
   return (
