@@ -1,6 +1,6 @@
+import { Input } from '@mui/material';
 import { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
-import { Input } from '@material-ui/core';
 
 interface Form {
   age: number;
