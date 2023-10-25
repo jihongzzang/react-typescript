@@ -15,6 +15,7 @@ import AssignComponents from 'Components/AssignComponents/AssignComponents';
 import DeepChildren from 'Components/Children/DeepChildren';
 import Counter from 'Components/Reducer/basic/Counter';
 import TodoList from 'Components/Reducer/basic2/TodoList';
+import Messenger from 'Components/Reducer/basic3/Messenger';
 
 function App() {
   return (
@@ -68,6 +69,15 @@ function App() {
         element={
           <div>
             <TodoList />
+          </div>
+        }
+      />
+      <Route
+        path="reducer/3"
+        id="2"
+        element={
+          <div>
+            <Messenger />
           </div>
         }
       />
