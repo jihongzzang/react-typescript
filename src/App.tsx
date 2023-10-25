@@ -13,6 +13,8 @@ import ExampleSkeleton from 'Components/Skeleton/ExampleSkeleton';
 import { Route, Routes } from 'react-router-dom';
 import AssignComponents from 'Components/AssignComponents/AssignComponents';
 import DeepChildren from 'Components/Children/DeepChildren';
+import Counter from 'Components/Reducer/basic/Counter';
+import TodoList from 'Components/Reducer/basic2/TodoList';
 
 function App() {
   return (
@@ -49,6 +51,23 @@ function App() {
         element={
           <div>
             <AssignComponents />
+          </div>
+        }
+      />
+      <Route
+        path="reducer/1"
+        element={
+          <div>
+            <Counter />
+          </div>
+        }
+      />
+      <Route
+        path="reducer/2"
+        id="2"
+        element={
+          <div>
+            <TodoList />
           </div>
         }
       />
