@@ -1,4 +1,4 @@
-### 다양한 UI 컴포넌트 연습 레포지토리
+### 리액트 타입스크립트 관련 연습장
 
 #### **Skeleton UI**
 
@@ -36,7 +36,7 @@
 - [Infinite Ui 훅](src/hooks/useIntersectionObserver.ts)
 - [Infinite Ui 컴포넌트](src/Components/InfiniteScroll2/InfiniteScroll2.tsx)
 
-### **React-Hook-form**
+#### **React-Hook-form**
 
 - [ReactHookForm](src/Components/ReactHookForm/ReactHookForm.md)
 - [ReactHookForm 컴포넌트](src/Components/ReactHookForm/ReactHookForm.tsx)
@@ -49,3 +49,11 @@
 ### **document**
 
 - [Document](src/document/hookFlow.html)
+
+#### **UseReducerHook**
+
+- [UseReducer basic1](src/Components/Reducer/basic1/Counter.tsx)
+
+- [UseReducer basic2](src/Components/Reducer/basic2/TodoList.tsx)
+
+- [UseReducer Deep](src/Components/Reducer/basic3/Messenger.tsx)

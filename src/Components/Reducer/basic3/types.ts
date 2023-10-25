@@ -7,5 +7,4 @@ export type Messages = {
 export type SendMessageItem = {
   selectedId: number;
   messages: Messages;
-  // message: string;
 };
