@@ -16,6 +16,11 @@ import DeepChildren from 'Components/Children/DeepChildren';
 import Counter from 'Components/Reducer/basic/Counter';
 import TodoList from 'Components/Reducer/basic2/TodoList';
 import Messenger from 'Components/Reducer/basic3/Messenger';
+import ContextBasic from 'Components/Context/basic/Context';
+import ContextBasic2 from 'Components/Context/basic2/Context';
+import ContextBasic3 from 'Components/Context/basic3/Context';
+import ContextReducer from 'Components/ContextReducer/ContextReducer';
+import ContextReducerRefactored from 'Components/ContextReducerRefactored/ContextReducerRefactored';
 
 function App() {
   return (
@@ -65,7 +70,6 @@ function App() {
       />
       <Route
         path="reducer/2"
-        id="2"
         element={
           <div>
             <TodoList />
@@ -74,10 +78,50 @@ function App() {
       />
       <Route
         path="reducer/3"
-        id="2"
         element={
           <div>
             <Messenger />
+          </div>
+        }
+      />
+      <Route
+        path="context"
+        element={
+          <div>
+            <ContextBasic />
+          </div>
+        }
+      />
+      <Route
+        path="context/2"
+        element={
+          <div>
+            <ContextBasic2 />
+          </div>
+        }
+      />
+      <Route
+        path="context/3"
+        element={
+          <div>
+            <ContextBasic3 />
+          </div>
+        }
+      />
+
+      <Route
+        path="contextreducer"
+        element={
+          <div>
+            <ContextReducer />
+          </div>
+        }
+      />
+      <Route
+        path="contextreducer/2"
+        element={
+          <div>
+            <ContextReducerRefactored />
           </div>
         }
       />
