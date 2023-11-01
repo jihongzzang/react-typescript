@@ -1,7 +1,5 @@
 ### 게으른 초기화
 
-<a href="https://reactjs.org/docs/hooks-reference.html#lazy-initial-state">공식문서 보러가기</a>
-
 ### 예제 코드
 
 ```js

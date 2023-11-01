@@ -21,6 +21,7 @@ import ContextBasic2 from 'Components/Context/basic2/Context';
 import ContextBasic3 from 'Components/Context/basic3/Context';
 import ContextReducer from 'Components/ContextReducer/ContextReducer';
 import ContextReducerRefactored from 'Components/ContextReducerRefactored/ContextReducerRefactored';
+import PolymorphicComponent from 'Components/PolymorphicComponent';
 
 function App() {
   return (
@@ -122,6 +123,15 @@ function App() {
         element={
           <div>
             <ContextReducerRefactored />
+          </div>
+        }
+      />
+
+      <Route
+        path="polymorphic"
+        element={
+          <div>
+            <PolymorphicComponent />
           </div>
         }
       />

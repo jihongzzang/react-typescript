@@ -9,12 +9,6 @@
 - PropTypes
 - Reconciliation
 
-<a href="https://ko.reactjs.org/docs/getting-started.html">공식문서 보러가기</a>
-
-공식문서의 고급안내서 관련 내용입니다. 이전의 기본을 바탕으로 심화된 내용까지 다뤄보자!
-
-해당 주제와 관련된 코드는 상단에 링크(내용과 관련된 코드 보러가기)에 `Src` - `Component` - `Advanced` 폴더 내부에 들어있다.
-
 ### 주제에 대한 내용
 
 ### Hooks
