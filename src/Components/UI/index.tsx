@@ -1,8 +1,8 @@
 import Carousel from 'Components/Carousel/Carousel';
-import InfiniteScroll from 'Components/InfiniteScroll/InfinteScoll';
-import InfiniteScroll2 from 'Components/InfiniteScroll2/InfiniteScroll2';
+// import InfiniteScroll from 'Components/InfiniteScroll/InfinteScoll';
+// import InfiniteScroll2 from 'Components/InfiniteScroll2/InfiniteScroll2';
 import ModalExample from 'Components/Modal/ModalExample';
-import PaginationExample from 'Components/Pagination/PaginationExample';
+// import PaginationExample from 'Components/Pagination/PaginationExample';
 import ErrorHandleForm from 'Components/ReactHookForm/ErrorHandleForm';
 import NestedForm from 'Components/ReactHookForm/NestedForm';
 import ReactHookForm from 'Components/ReactHookForm/ReactHookForm';
@@ -20,10 +20,10 @@ export default function UI() {
       <Register />
       <NestedForm />
       <ReactHookForm />
-      <InfiniteScroll2 />
-      <InfiniteScroll />
+      {/* <InfiniteScroll2 /> */}
+      {/* <InfiniteScroll /> */}
       <ModalExample />
-      <PaginationExample />
+      {/* <PaginationExample /> */}
       <Carousel />
       <ExampleSkeleton />
     </>

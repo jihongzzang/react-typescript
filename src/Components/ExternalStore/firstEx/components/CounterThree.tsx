@@ -21,7 +21,12 @@ export default function CounterThree() {
   };
 
   return (
-    <Box width="fit-content" bgcolor="yellowgreen" p={4}>
+    <Box
+      width="fit-content"
+      bgcolor="yellowgreen"
+      p={4}
+      border="1px solid black"
+    >
       <span>{`count: ${count}`}</span>
       <button type="button" onClick={increaseCount}>
         Increase

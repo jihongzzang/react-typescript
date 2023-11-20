@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useReducer } from 'react';
-import useForceUpdate from '../hooks/useForceUpdate';
 import { Box } from '@mui/material';
 
 type State = {
@@ -26,7 +24,7 @@ export default function CounterTwo() {
   };
 
   return (
-    <Box width="fit-content" bgcolor="teal" p={4}>
+    <Box width="fit-content" bgcolor="teal" p={4} border="1px solid black">
       <span>{`count: ${count}`}</span>
       <button type="button" onClick={increaseCount}>
         Increase
