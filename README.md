@@ -60,19 +60,13 @@
 #### **useReducer**
 
 - [UseReducer basic1](src/Components/Reducer/basic1)
-
 - [UseReducer basic2](src/Components/Reducer/basic2)
-
 - [UseReducer Deep](src/Components/Reducer/basic3)
 
 #### **useContext/Provider**
 
 - [context basic1](src/Components/Context/basic)
-
 - [context basic2](src/Components/Context/basic2)
-
 - [context basic3](src/Components/Context/basic3/)
-
 - [provider](src/Components/ContextReducer/)
-
 - [provider refactored](src/Components/ContextReducerRefactored/)
