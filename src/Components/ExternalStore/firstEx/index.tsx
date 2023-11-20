@@ -1,5 +1,5 @@
 import { Stack } from '@mui/material';
-import CounterOne from './components/CounterOne';
+import CounterOne from '../secondEx/components/Counter';
 import CounterTwo from './components/CounterTwo';
 import CounterThree from './components/CounterThree';
 import CounterMachine from './components/CounterMachine';

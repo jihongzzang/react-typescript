@@ -12,23 +12,30 @@ import ContextReducer from 'Components/ContextReducer/ContextReducer';
 import ContextReducerRefactored from 'Components/ContextReducerRefactored/ContextReducerRefactored';
 import PolymorphicComponent from 'Components/PolymorphicComponent';
 import ExternalStoreFirst from 'Components/ExternalStore/firstEx';
+import ExternalStoreSecond from 'Components/ExternalStore/secondEx';
 
 function App() {
   return (
     <Routes>
       <Route index element={<UI />} />
+      <Route path="polymorphic" element={<PolymorphicComponent />} />
+
       <Route path="children" element={<DeepChildren />} />
       <Route path="assigncomponents" element={<AssignComponents />} />
-      <Route path="reducer/1" element={<Counter />} />
+
+      <Route path="reducer" element={<Counter />} />
       <Route path="reducer/2" element={<TodoList />} />
       <Route path="reducer/3" element={<Messenger />} />
+
       <Route path="context" element={<ContextBasic />} />
       <Route path="context/2" element={<ContextBasic2 />} />
       <Route path="context/3" element={<ContextBasic3 />} />
+
       <Route path="contextreducer" element={<ContextReducer />} />
       <Route path="contextreducer/2" element={<ContextReducerRefactored />} />
-      <Route path="polymorphic" element={<PolymorphicComponent />} />
+
       <Route path="externalstore" element={<ExternalStoreFirst />} />
+      <Route path="externalstore/2" element={<ExternalStoreSecond />} />
     </Routes>
   );
 }
