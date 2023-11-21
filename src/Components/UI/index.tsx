@@ -1,15 +1,12 @@
-import Carousel from 'Components/Carousel/Carousel';
-// import InfiniteScroll from 'Components/InfiniteScroll/InfinteScoll';
-// import InfiniteScroll2 from 'Components/InfiniteScroll2/InfiniteScroll2';
-import ModalExample from 'Components/Modal/ModalExample';
-// import PaginationExample from 'Components/Pagination/PaginationExample';
-import ErrorHandleForm from 'Components/ReactHookForm/ErrorHandleForm';
-import NestedForm from 'Components/ReactHookForm/NestedForm';
-import ReactHookForm from 'Components/ReactHookForm/ReactHookForm';
-import Register from 'Components/ReactHookForm/Register';
-import Register2 from 'Components/ReactHookForm/Register2';
-import ValidationForm from 'Components/ReactHookForm/ValidationForm';
-import ExampleSkeleton from 'Components/Skeleton/ExampleSkeleton';
+import Carousel from '../Carousel/Carousel';
+import ModalExample from '../Modal/ModalExample';
+import ErrorHandleForm from '../ReactHookForm/ErrorHandleForm';
+import NestedForm from '../ReactHookForm/NestedForm';
+import ReactHookForm from '../ReactHookForm/ReactHookForm';
+import Register from '../ReactHookForm/Register';
+import Register2 from '../ReactHookForm/Register2';
+import ValidationForm from '../ReactHookForm/ValidationForm';
+import ExampleSkeleton from '../Skeleton/ExampleSkeleton';
 
 export default function UI() {
   return (

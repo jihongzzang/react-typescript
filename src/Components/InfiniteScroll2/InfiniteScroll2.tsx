@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
-import useIntersectionObserver from 'hooks/useIntersectionObserver';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 interface Airline {
   id: number;

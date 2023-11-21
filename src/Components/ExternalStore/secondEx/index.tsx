@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 import { Stack } from '@mui/material';
 import Counter from './components/Counter';
 import CounterController from './components/CounterController';
