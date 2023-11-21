@@ -13,6 +13,7 @@ import Counter from './Components/Reducer/basic/Counter';
 import TodoList from './Components/Reducer/basic2/TodoList';
 import Messenger from './Components/Reducer/basic3/Messenger';
 import UI from './Components/UI';
+import ReduxEx from './Components/ExternalStore/reduxEx';
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
       <Route path="contextreducer/2" element={<ContextReducerRefactored />} />
 
       <Route path="externalstore" element={<ExternalStoreFirst />} />
-      <Route path="externalstore/2" element={<ExternalStoreSecond />} />
+      <Route path="externalstore/tsyringe" element={<ExternalStoreSecond />} />
+      <Route path="externalstore/redux" element={<ReduxEx />} />
     </Routes>
   );
 }
