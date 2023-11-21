@@ -2,7 +2,7 @@ import { singleton } from 'tsyringe';
 
 import BaseStore, { Action } from './BaseStore';
 
-const initialState = { count: 0, name: 'Ji Hong' };
+const initialState = { count: 0, name: 'jihong' };
 
 export type State = typeof initialState;
 
@@ -11,7 +11,10 @@ function increase(state: State, action: Action<number>) {
 }
 
 function decrease(state: State, action: Action<number>) {
-  return { ...state, count: state.count - (action.payload ?? 1) };
+  return {
+    ...state,
+    count: state.count - (action.payload ?? 1),
+  };
 }
 
 const reducers = {

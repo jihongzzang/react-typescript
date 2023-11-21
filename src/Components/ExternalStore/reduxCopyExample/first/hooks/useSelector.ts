@@ -25,12 +25,13 @@ export default function useSelector<T>(selector: Selector<T>): T {
       }
 
       if (newState !== state) {
-        setState(newState);
         forceUpdate();
+        setState(newState);
       }
     };
 
     store.addListener(update);
+
     return () => store.removeListener(update);
   }, [state, forceUpdate]);
 

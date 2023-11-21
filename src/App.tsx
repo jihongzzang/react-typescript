@@ -13,31 +13,32 @@ import Counter from './Components/Reducer/basic/Counter';
 import TodoList from './Components/Reducer/basic2/TodoList';
 import Messenger from './Components/Reducer/basic3/Messenger';
 import UI from './Components/UI';
-import ReduxEx from './Components/ExternalStore/reduxEx';
+import ReduxCopyEx from './Components/ExternalStore/reduxCopyExample';
 
 function App() {
   return (
     <Routes>
       <Route index element={<UI />} />
-      <Route path="polymorphic" element={<PolymorphicComponent />} />
-
       <Route path="children" element={<DeepChildren />} />
+      <Route path="polymorphic" element={<PolymorphicComponent />} />
       <Route path="assigncomponents" element={<AssignComponents />} />
 
-      <Route path="reducer" element={<Counter />} />
-      <Route path="reducer/2" element={<TodoList />} />
-      <Route path="reducer/3" element={<Messenger />} />
+      <Route path="reducer/counter" element={<Counter />} />
+      <Route path="reducer/todoList" element={<TodoList />} />
+      <Route path="reducer/messanger" element={<Messenger />} />
 
-      <Route path="context" element={<ContextBasic />} />
-      <Route path="context/2" element={<ContextBasic2 />} />
-      <Route path="context/3" element={<ContextBasic3 />} />
-
-      <Route path="contextreducer" element={<ContextReducer />} />
-      <Route path="contextreducer/2" element={<ContextReducerRefactored />} />
+      <Route path="context/basic" element={<ContextBasic />} />
+      <Route path="context/basicTwo" element={<ContextBasic2 />} />
+      <Route path="context/basicThree" element={<ContextBasic3 />} />
+      <Route path="context/reducer" element={<ContextReducer />} />
+      <Route
+        path="context/reducer/refactored"
+        element={<ContextReducerRefactored />}
+      />
 
       <Route path="externalstore" element={<ExternalStoreFirst />} />
       <Route path="externalstore/tsyringe" element={<ExternalStoreSecond />} />
-      <Route path="externalstore/redux" element={<ReduxEx />} />
+      <Route path="externalstore/reduxcopy" element={<ReduxCopyEx />} />
     </Routes>
   );
 }

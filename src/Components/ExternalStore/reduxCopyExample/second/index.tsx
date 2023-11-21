@@ -1,23 +1,25 @@
-import useDispatch from './hooks/useDispatch';
-import useSelector from './hooks/useSelector';
+import { Box } from '@mui/material';
+import useCounterStore from './hooks/useCountStore';
 
-export default function ReduxFirst() {
-  const dispatch = useDispatch();
-  const count = useSelector((state) => state.count);
+export default function ReduxSecond() {
+  const store = useCounterStore();
+
+  const { count } = store;
 
   const increase = () => {
-    dispatch({ type: 'increase' });
+    store.increase();
   };
+
   const decrease = () => {
-    dispatch({ type: 'decrease' });
+    store.increase();
   };
 
   const increaseTen = () => {
-    dispatch({ type: 'increase', payload: 10 });
+    store.increase(10);
   };
 
   return (
-    <div>
+    <Box bgcolor={'green'} width={'fit-content'}>
       {count}
       <button type="button" onClick={increase}>
         Increase
@@ -28,6 +30,6 @@ export default function ReduxFirst() {
       <button type="button" onClick={increaseTen}>
         Increase 10
       </button>
-    </div>
+    </Box>
   );
 }
