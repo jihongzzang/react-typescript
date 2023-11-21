@@ -1,12 +1,17 @@
 import 'reflect-metadata';
 
-import Counter from './components/Counter';
-import CounterController from './components/CounterController';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
-export default function ReduxThrid() {
+import Counter from './components/Counter';
+
+import CounterController from './components/CounterController';
+
+export default function ReduxThird() {
   return (
-    <Box bgcolor={'yellowgreen'} width={'fit-content'}>
+    <Box bgcolor={'green'} width={'fit-content'}>
+      <Typography component={'h2'} color={'white'} textAlign={'center'}>
+        objectStore
+      </Typography>
       <Counter />
       <Counter />
       <CounterController />

@@ -2,19 +2,16 @@ import 'reflect-metadata';
 
 import { Box, Typography } from '@mui/material';
 
-import NameCard from './components/NameCard';
-
 import Counter from './components/Counter';
 
 import CounterController from './components/CounterController';
 
-export default function ReduxSecond() {
+export default function ReduxThird() {
   return (
-    <Box bgcolor={'teal'} width={'fit-content'}>
+    <Box bgcolor={'pink'} width={'fit-content'}>
       <Typography component={'h2'} color={'white'} textAlign={'center'}>
-        reduxly deep
+        useStore-ts
       </Typography>
-      <NameCard />
       <Counter />
       <Counter />
       <CounterController />

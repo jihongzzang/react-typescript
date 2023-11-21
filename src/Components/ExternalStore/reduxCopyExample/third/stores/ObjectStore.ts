@@ -1,6 +1,6 @@
 type Listener = () => void;
 
-export default class ActionStore {
+export default class ObjectStore {
   private listners = new Set<Listener>();
 
   addListener(listener: Listener) {

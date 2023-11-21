@@ -1,9 +1,7 @@
 import useCounterStore from '../hooks/useCounterStore';
 
 export default function CounterController() {
-  const store = useCounterStore();
-
-  const { count } = store;
+  const [{ count }, store] = useCounterStore();
 
   return (
     <div>
@@ -16,6 +14,9 @@ export default function CounterController() {
       </button>
       <button type="button" onClick={() => store.increase(10)}>
         Increase 10
+      </button>
+      <button type="button" onClick={() => store.decrease(10)}>
+        Decrease 10
       </button>
     </div>
   );

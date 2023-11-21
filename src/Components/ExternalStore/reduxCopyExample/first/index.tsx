@@ -1,13 +1,17 @@
-import { Box } from '@mui/material';
+import 'reflect-metadata';
 
-import NameCard from './components/NameCard';
+import { Box, Typography } from '@mui/material';
+
 import Counter from './components/Counter';
+
 import CounterController from './components/CounterController';
 
 export default function ReduxFirst() {
   return (
-    <Box bgcolor={'teal'} width={'fit-content'}>
-      <NameCard />
+    <Box bgcolor={'yellowgreen'} width={'fit-content'}>
+      <Typography component={'h2'} color={'white'} textAlign={'center'}>
+        reduxly
+      </Typography>
       <Counter />
       <Counter />
       <CounterController />

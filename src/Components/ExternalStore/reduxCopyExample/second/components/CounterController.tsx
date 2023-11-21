@@ -1,21 +1,25 @@
 import useDispatch from '../hooks/useDispatch';
 import useSelector from '../hooks/useSelector';
 
-import { increase, decrease } from '../stores/Store';
-
 export default function CouxnterController() {
-  const disaptch = useDispatch();
+  const dispatch = useDispatch();
 
   const count = useSelector((state) => state.count);
 
   return (
     <div>
       <p>{`countController: ${count}`}</p>
-      <button type="button" onClick={() => disaptch(increase())}>
+      <button type="button" onClick={() => dispatch({ type: 'increase' })}>
         Increase
       </button>
-      <button type="button" onClick={() => disaptch(decrease())}>
+      <button type="button" onClick={() => dispatch({ type: 'decrease' })}>
         Decrease
+      </button>
+      <button
+        type="button"
+        onClick={() => dispatch({ type: 'increase', payload: 10 })}
+      >
+        Increase 10
       </button>
     </div>
   );

@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 
 import useForceUpdate from '../../../firstEx/hooks/useForceUpdate';
 
-import ActionStore from '../stores/ActionStore';
+import ObejctStore from '../stores/ObjectStore';
 
-export default function useActionStore<T extends ActionStore>(store: T) {
+export default function useObejctStore<T extends ObejctStore>(store: T) {
   const forceUpdate = useForceUpdate();
 
   useEffect(() => {

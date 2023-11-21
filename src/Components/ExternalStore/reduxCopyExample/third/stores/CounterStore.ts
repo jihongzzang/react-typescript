@@ -1,9 +1,9 @@
 import { singleton } from 'tsyringe';
 
-import ActionStore from './ActionStore';
+import ObjectStore from './ObjectStore';
 
 @singleton()
-export default class CountStore extends ActionStore {
+export default class CounterStore extends ObjectStore {
   count = 0;
 
   increase(step = 1) {

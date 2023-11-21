@@ -1,11 +1,11 @@
 import { container } from 'tsyringe';
 
-import useActionStore from './useActionStore';
+import useObjectStore from './useObjectStore';
 
-import CountStore from '../stores/CountStore';
+import CountStore from '../stores/CounterStore';
 
 export default function useCounterStore() {
   const store = container.resolve(CountStore);
 
-  return useActionStore(store);
+  return useObjectStore(store);
 }

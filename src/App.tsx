@@ -23,22 +23,27 @@ function App() {
       <Route path="polymorphic" element={<PolymorphicComponent />} />
       <Route path="assigncomponents" element={<AssignComponents />} />
 
-      <Route path="reducer/counter" element={<Counter />} />
-      <Route path="reducer/todoList" element={<TodoList />} />
-      <Route path="reducer/messanger" element={<Messenger />} />
+      <Route path="reducer">
+        <Route path="counter" element={<Counter />} />
+        <Route path="todoList" element={<TodoList />} />
+        <Route path="messanger" element={<Messenger />} />
+      </Route>
 
-      <Route path="context/basic" element={<ContextBasic />} />
-      <Route path="context/basicTwo" element={<ContextBasic2 />} />
-      <Route path="context/basicThree" element={<ContextBasic3 />} />
-      <Route path="context/reducer" element={<ContextReducer />} />
-      <Route
-        path="context/reducer/refactored"
-        element={<ContextReducerRefactored />}
-      />
+      <Route path="context">
+        <Route path="basic" element={<ContextBasic />} />
+        <Route path="basicTwo" element={<ContextBasic2 />} />
+        <Route path="basicThree" element={<ContextBasic3 />} />
+        <Route path="reducer">
+          <Route path="" element={<ContextReducer />} />
+          <Route path="refactored" element={<ContextReducerRefactored />} />
+        </Route>
+      </Route>
 
-      <Route path="externalstore" element={<ExternalStoreFirst />} />
-      <Route path="externalstore/tsyringe" element={<ExternalStoreSecond />} />
-      <Route path="externalstore/reduxcopy" element={<ReduxCopyEx />} />
+      <Route path="externalstore">
+        <Route path="" element={<ExternalStoreFirst />} />
+        <Route path="tsyringe" element={<ExternalStoreSecond />} />
+        <Route path="reduxcopy" element={<ReduxCopyEx />} />
+      </Route>
     </Routes>
   );
 }
