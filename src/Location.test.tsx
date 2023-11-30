@@ -1,22 +1,33 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
-import Home from './Components/Location/pages/Home';
-import About from './Components/Location/pages/About';
+import { MemoryRouter } from 'react-router-dom';
+
+import App from './App';
 
 const context = describe;
 
-describe('locationTest', () => {
-  context('pathname', () => {
-    it('return ', () => {
-      render(<About />);
+describe('LoactionRoutes', () => {
+  context('when the current path is location', () => {
+    it('renders the location page', () => {
+      render(
+        <MemoryRouter initialEntries={['/location']}>
+          <App />
+        </MemoryRouter>,
+      );
+
+      screen.getByText(/Welcome!/);
     });
   });
-});
 
-describe('locationTest', () => {
-  context('pathname', () => {
-    it('return ', () => {
-      render(<Home />);
+  context('when the current path is location/about', () => {
+    it('renders the location/about page', () => {
+      render(
+        <MemoryRouter initialEntries={['/location/about']}>
+          <App />
+        </MemoryRouter>,
+      );
+
+      screen.getByText(/This is test/);
     });
   });
 });

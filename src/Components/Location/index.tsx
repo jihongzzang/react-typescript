@@ -1,15 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
-import LocationEx from './pages/Location';
-
-// import Home from './pages/Home';
-// import About from './pages/About';
+import Home from './pages/Home';
+import About from './pages/About';
+import Layout from './components/Layout';
 
 export default function LoactionRoutes() {
   return (
     <Routes>
-      <Route path="*" element={<LocationEx />} />
-      {/* <Route path="home" element={<Home />} /> */}
-      {/* <Route path="about" element={<About />} /> */}
+      <Route element={<Layout />}>
+        <Route path="" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Route>
     </Routes>
   );
 }

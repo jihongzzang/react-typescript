@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Route, Routes } from 'react-router-dom';
 import PolymorphicComponent from './Components/PolymorphicComponent';
 import AssignComponents from './Components/AssignComponents/AssignComponents';
@@ -20,9 +21,9 @@ import LoactionRoutes from './Components/Location';
 function App() {
   return (
     <Routes>
-      <Route index element={<UI />} />
+      {/* <Route index element={<UI />} /> */}
       <Route path="location/*" element={<LoactionRoutes />} />
-      <Route path="children" element={<DeepChildren />} />
+      {/* <Route path="children" element={<DeepChildren />} />
       <Route path="polymorphic" element={<PolymorphicComponent />} />
       <Route path="assigncomponents" element={<AssignComponents />} />
 
@@ -46,7 +47,7 @@ function App() {
         <Route path="" element={<ExternalStoreFirst />} />
         <Route path="tsyringe" element={<ExternalStoreSecond />} />
         <Route path="reduxcopy" element={<ReduxCopyEx />} />
-      </Route>
+      </Route> */}
     </Routes>
   );
 }
