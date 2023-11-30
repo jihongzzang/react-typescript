@@ -1,14 +1,14 @@
 export default function Footer() {
-  const basicPath = '/location';
-
   return (
     <footer>
       <hr />
       <nav>
         <ul>
           <li>
-            <a href={basicPath}>home</a>
-            <a href={`${basicPath}/about`}>about</a>
+            <a href="/home">home</a>
+          </li>
+          <li>
+            <a href="/about">about</a>
           </li>
         </ul>
       </nav>
