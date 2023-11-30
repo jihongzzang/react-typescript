@@ -15,10 +15,13 @@ import Messenger from './Components/Reducer/basic3/Messenger';
 import UI from './Components/UI';
 import ReduxCopyEx from './Components/ExternalStore/reduxCopyExample';
 
+import LoactionRoutes from './Components/Location';
+
 function App() {
   return (
     <Routes>
       <Route index element={<UI />} />
+      <Route path="location/*" element={<LoactionRoutes />} />
       <Route path="children" element={<DeepChildren />} />
       <Route path="polymorphic" element={<PolymorphicComponent />} />
       <Route path="assigncomponents" element={<AssignComponents />} />
