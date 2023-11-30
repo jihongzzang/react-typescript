@@ -18,6 +18,8 @@ import ReduxCopyEx from './Components/ExternalStore/reduxCopyExample';
 import Home from './Components/Location/pages/Home';
 import About from './Components/Location/pages/About';
 import Layout from './Components/Location/components/Layout';
+import Logout from './Components/Location/pages/Logout';
+import Bye from './Components/Location/pages/Bye';
 
 // import routes from './Components/Location/components/routes';
 // const router = createBrowserRouter(routes);
@@ -30,6 +32,8 @@ function App() {
       <Route element={<Layout />}>
         <Route path="about" element={<About />} />
         <Route path="home" element={<Home />} />
+        <Route path="logout" element={<Logout />} />
+        <Route path="bye" element={<Bye />} />
       </Route>
 
       <Route path="children" element={<DeepChildren />} />

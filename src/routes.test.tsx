@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { render, screen } from '@testing-library/react';
+
+import { render, screen, waitFor } from '@testing-library/react';
 
 import { RouterProvider, createMemoryRouter } from 'react-router-dom';
 
@@ -15,19 +16,34 @@ describe('LoactionRoutes', () => {
     render(<RouterProvider router={router} />);
   }
 
-  context('when the current path is location', () => {
-    it('renders the location page', () => {
+  context('when the current path is home', () => {
+    it('renders the home page', () => {
       renderRouter('home');
 
       screen.getByText(/Welcome!/);
     });
   });
 
-  context('when the current path is location/about', () => {
-    it('renders the location/about page', () => {
+  context('when the current path is about', () => {
+    it('renders the about page', () => {
       renderRouter('about');
 
       screen.getByText(/This is test/);
+    });
+  });
+
+  context('when the current path is logout', () => {
+    it('redirects to the bye page', async () => {
+      renderRouter('logout');
+
+      screen.getByText(/...남은시간/);
+
+      await waitFor(
+        () => {
+          expect(screen.getByText(/로그아웃/)).toBeInTheDocument();
+        },
+        { timeout: 4000 },
+      );
     });
   });
 });
